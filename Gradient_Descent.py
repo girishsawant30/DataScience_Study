@@ -11,10 +11,7 @@ def gradient_descent(x,y):
         cp = -(2/n)*sum(y-y_predicted)
         m = m - rate * mp
         c = c - rate * cp
-        print("m : ",m)
-        print("c : ",c)
-        print("cost :",cost)
-        print("\n")
+        print("Cost Function: {}, M: {}, C: {}".format(cost, m, c))
 
 X = np.array([2,4,6,8,10,12,14,16,18,20])
 Y = np.array([10,20,30,40,50,60,70,80,90,100])
